@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Abra a página com vários tamanhos de tela</p>
+    <picture>
+        <source media="(min-width: )" srcset="" sizes="">
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo áudios</h1>
+    <p>Colocando uma mídia de áudio</p>
+    <audio  autoplay controls loop >
+        <source srcset="media/happy-mistake.mp3" type="audio/mpeg">
+        <p>Infelizmente</p>
+    </audio>
+    <audio controls>
+        <source src="media/happy-mistake.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>

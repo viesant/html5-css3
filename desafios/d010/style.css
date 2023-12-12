@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: Android;
+    src: url(fontes/idroid.otf);
+}
+
+:root {
+    --color0: #C5EBD6;
+    --color1: #84E1AD;
+    --color2: #3ddc84;
+    --color3: #2fa866;
+    --color4: #1a5c37;
+    --color5: #063d1e;
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-android: 'Android', sans-serif;
+}
+
+/*
+
+main h1 {
+    
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* list-style-type: none; */
+    text-decoration: none;
+    font-weight: normal;
+}
+
+body {
+    background-color: var(--color0);
+    font-family: var(--font-padrao)
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--color3), var(--color5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 30px;
+    /* box-shadow: 0px 0px 10px 1px black; */
+
+    h1 {
+        font-family: var(--font-destaque);
+        font-size: 3em;
+        color: white;
+        padding-bottom: 20px;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.233);
+        /* border: 1px solid black; */
+    }
+
+    p {
+        font-family: var(--font-padrao);
+        font-size: 1.2em;
+        color: white;
+        max-width: 600px;
+        margin: auto;
+        /* margin-bottom: 20px; */
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.233);
+        padding: 0 15px 20px 15px;
+        /* border: 1px solid black; */
+    }
+}
+
+nav {
+    background-color: var(--color5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.178);
+
+    a {
+        color: var(--color1);
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    a:hover {
+        background-color: var(--color3);
+        color: var(--color5);
+        border-radius: 5px;
+        transition-duration: 0.3s;
+    }
+}
+
+main {
+    background-color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.432);
+
+    h1 {
+        color: var(--color5);
+        font-family: var(--font-android);
+        font-weight: normal;
+        font-size: 1.8em;
+    }
+
+    h2 {
+        color: var(--color4);
+        font-family: var(--font-android);
+        background-image: linear-gradient(to right, var(--color1), transparent);
+        text-indent: 10px;
+        font-weight: normal;
+    }
+
+    p {
+        text-align: justify;
+        margin: 15px 0;
+        text-indent: 30px;
+        line-height: 2em;
+    }
+
+    strong {
+        color: var(--color4);
+        font-weight: bold;
+    }
+
+    a {
+        color: var(--color3);
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a.externo::after {
+        content: '\00a0\1f517';
+    }
+
+    img {
+        width: 100%;
+    }
+
+    img.pequena {
+        display: block;
+        margin: auto;
+        max-width: 350px;
+    }
+
+    .video {
+        background-color: var(--color5);
+        margin: 0 -20px 30px -20px;
+        padding: 20px;
+        padding-bottom: 56.5%;
+        position: relative;
+
+        iframe {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+    }
+}
+
+aside {
+    background-color: var(--color1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.171);
+
+    h3 {
+        background-color: var(--color4);
+        color: white;
+        margin: -10px -10px 0 -10px;
+        border-radius: 10px 10px 0 0;
+        padding: 10px;
+    }
+
+    ul {
+        list-style-position: inside;
+        columns: 2;
+        list-style-type: '\1F5F8\00A0\00A0';
+    }
+}
+
+footer {
+    background-color: var(--color5);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.8em;
+
+    a {
+        color: white;
+        font-weight: bolder;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: var(--color1);
+    }
+}
