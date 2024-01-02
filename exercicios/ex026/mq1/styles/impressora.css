@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* Estilo para impressora */
+
+*{
+    margin: 15px;
+    padding: 15px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+nav{
+    display: none;
+}
+article::after{
+    content: 'Esse artigo foi impresso através do site www.lalalala.com';
+}
+article{
+    width: 100%;
+}
