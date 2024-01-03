@@ -20,6 +20,7 @@ body {
     background: black url(../../imagens/back-phone.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
+    padding-top: 20px;
 }
 
 main {
@@ -34,8 +35,12 @@ h1{
     color: white;
     text-shadow: 1px 1px 4px black;
 }
+img{
+    display: block;
+    margin: auto;
+}
 
-#phone{}
+#phone{display:block}
 #pc{display: none;}
 #print{display: none;}
 #tablet{display: none;}
