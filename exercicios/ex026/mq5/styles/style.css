@@ -18,6 +18,7 @@ h1 {
     background-color: rgb(39, 39, 39);
     display: block;
     color: white;
+    margin-top: 10px;
     padding: 10px;
     text-align: center;
     cursor: pointer;
@@ -27,22 +28,23 @@ h1 {
     color: black;
 }
 #itens{
-    display:none;
+    /* display:none; */
 }
 menu li {
     list-style: none;
+    display:inline;
 }
 
 menu a {
-    border: 2px solid gray;
     display: block;
+    border: 2px solid gray;
     padding: 10px;
     background-color: rgb(73, 73, 73);
     text-decoration: none;
     text-align: center;
     color: white;
 }
-nav a:hover{
+menu a:hover{
     background-color: gray;
 }
 
