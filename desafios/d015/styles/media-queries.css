@@ -42,4 +42,10 @@ lilás: #5f2c82
      div#formulario{
          width: 50%;
      }
+     #formulario h1{
+        font-size: 2em;
+     }
+     #formulario p{
+        font-size: 1em;
+    }
 }

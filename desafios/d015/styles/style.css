@@ -55,3 +55,10 @@ div#formulario{
     padding: 10px;
     border: 1px solid red;
 }
+#formulario h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#formulario p{
+    font-size: 0.8em;
+}
