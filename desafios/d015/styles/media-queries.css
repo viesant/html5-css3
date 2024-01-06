@@ -16,6 +16,7 @@ lilás: #5f2c82
     }
     section#login{
         width: 80vw;
+        height: 350px;
         flex-direction: row;
     }
     div#imagem{
