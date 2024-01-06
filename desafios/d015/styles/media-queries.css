@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* estilos para media queries */
+/*
+verde: #49a09d
+lilás: #5f2c82
+*/
+:root {
+    --color1: #49a09d;
+    --color2: #5f2c82;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: linear-gradient(to bottom, var(--color2), var(--color1) );
+    }
+    section#login{
+        width: 80vw;
+        flex-direction: row;
+    }
+    div#imagem{
+        /* flex-grow: 1; */
+        width: 30%;
+        height: 100%;
+        /* border: 1px solid blue; */
+    }
+    div#formulario{
+        /* flex-grow: 2; */
+        width: 70%;
+        /* border: 1px solid yellow; */
+    }
+}
+
+@media screen and (min-width: 998px) {
+    section#login{
+        width: 900px;
+        /* flex-direction: row-reverse; */
+    }
+    div#imagem{
+        width: 50%; 
+     }
+     div#formulario{
+         width: 50%;
+     }
+}

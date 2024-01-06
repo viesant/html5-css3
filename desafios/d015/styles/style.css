@@ -1,2 +1,57 @@
 @charset "UTF-8";
 
+/* estilos mobile first */
+/*
+verde: #49a09d
+lilás: #5f2c82
+*/
+:root {
+    --color1: #49a09d;
+    --color2: #5f2c82;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body,
+html {
+    background-color: var(--color2);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#login {
+    background-color: #fff;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.342);
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+
+div#imagem {
+    /* height: 200px; */
+    height: 40%;
+    background: var(--color2) left bottom /cover no-repeat url(../images/metal.jpg);
+    border: 1px solid blue;
+}
+div#formulario{
+    /* flex-grow: 1; */
+
+    padding: 10px;
+    border: 1px solid red;
+}
